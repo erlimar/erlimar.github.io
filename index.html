@@ -44,7 +44,97 @@
 
 <p><a href="https://plus.google.com/b/117441063600253321808/">E5R no Google+</a></p>
 
-<p>Quer participar desse projeto?</p>
+<p>Quer participar desse projeto? Então o que tem a dizer sobre este código abaixo:</p>
+
+<div class="highlight highlight-csharp"><pre><span class="k">namespace</span> <span class="nn">IoC</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">interface</span> <span class="n">IService1</span>
+    <span class="p">{</span>
+        <span class="k">void</span> <span class="nf">Run</span><span class="p">();</span>
+        <span class="kt">bool</span> <span class="nf">Running</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">interface</span> <span class="n">IService2</span>
+    <span class="p">{</span>
+        <span class="k">void</span> <span class="nf">OtherMethod</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">interface</span> <span class="n">IService3</span>
+    <span class="p">{</span>
+        <span class="k">void</span> <span class="nf">OtherMethod2</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">MyService1</span> <span class="p">:</span> <span class="n">IService1</span>
+    <span class="p">{</span>
+        <span class="k">public</span> <span class="k">void</span> <span class="nf">Run</span><span class="p">(){}</span>
+        <span class="k">public</span> <span class="kt">bool</span> <span class="nf">Running</span><span class="p">(){</span>
+            <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">MyService2</span> <span class="p">:</span> <span class="n">IService2</span>
+    <span class="p">{</span>
+        <span class="k">public</span> <span class="k">void</span> <span class="nf">OtherMethod</span><span class="p">(){}</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">MyService3</span> <span class="p">:</span> <span class="n">IService3</span>
+    <span class="p">{</span>
+        <span class="k">public</span> <span class="k">void</span> <span class="nf">OtherMethod</span><span class="p">(){}</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">MyProccess</span>
+    <span class="p">{</span>
+        <span class="k">private</span> <span class="n">IService1</span> <span class="n">service1_</span><span class="p">;</span>
+        <span class="k">private</span> <span class="n">IService2</span> <span class="n">service2_</span><span class="p">;</span>
+        <span class="k">private</span> <span class="n">IService3</span> <span class="n">service3_</span><span class="p">;</span>
+
+        <span class="k">private</span> <span class="n">IService1</span> <span class="n">service1_2_</span><span class="p">;</span>
+        <span class="k">private</span> <span class="n">IService2</span> <span class="n">service2_2_</span><span class="p">;</span>
+        <span class="k">private</span> <span class="n">IService3</span> <span class="n">service3_2_</span><span class="p">;</span>
+
+        <span class="k">public</span> <span class="nf">MyProccess</span><span class="p">(</span><span class="n">IService1</span> <span class="n">service1</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">this</span><span class="p">.</span><span class="n">service1_</span> <span class="p">=</span> <span class="n">service1</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="k">public</span> <span class="n">IService2</span> <span class="n">Service2</span>
+        <span class="p">{</span>
+            <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="n">service2_</span><span class="p">;</span> <span class="p">}</span>
+            <span class="k">set</span> <span class="p">{</span> <span class="k">this</span><span class="p">.</span><span class="n">service2_</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span> <span class="p">}</span>
+        <span class="p">}</span>
+
+<span class="na">        [InjectionTo(typeof(IService3), "service3_")]</span>
+        <span class="k">public</span> <span class="kt">object</span> <span class="n">Service3</span>
+        <span class="p">{</span>
+            <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="n">service3_</span><span class="p">;</span> <span class="p">}</span>
+            <span class="k">set</span> <span class="p">{</span>
+                <span class="k">if</span><span class="p">(</span><span class="k">value</span><span class="p">.</span><span class="n">GetType</span><span class="p">()</span> <span class="p">!=</span> <span class="k">this</span><span class="p">.</span><span class="n">service3_</span><span class="p">.</span><span class="n">GetType</span><span class="p">()){</span>
+                    <span class="k">throw</span> <span class="k">new</span> <span class="nf">InvalidCastException</span><span class="p">();</span>
+                <span class="p">}</span>
+                <span class="k">this</span><span class="p">.</span><span class="n">service3_</span> <span class="p">=</span> <span class="p">(</span><span class="n">IService3</span><span class="p">)</span><span class="k">value</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+<span class="na">        [InjectionMethod]</span>
+        <span class="k">public</span> <span class="k">void</span> <span class="nf">IoC</span><span class="p">(</span><span class="n">IService1</span> <span class="n">service1</span><span class="p">,</span> <span class="n">IService2</span> <span class="n">service2</span><span class="p">,</span>
+            <span class="n">IService3</span> <span class="n">service3</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">this</span><span class="p">.</span><span class="n">service1_2_</span> <span class="p">=</span> <span class="n">service1</span><span class="p">;</span>
+            <span class="k">this</span><span class="p">.</span><span class="n">service2_2_</span> <span class="p">=</span> <span class="n">service2</span><span class="p">;</span>
+            <span class="k">this</span><span class="p">.</span><span class="n">service3_2_</span> <span class="p">=</span> <span class="n">service3</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">class</span> <span class="nc">InjectionToAttribute</span> <span class="p">:</span> <span class="n">Attribute</span>
+    <span class="p">{</span>
+        <span class="k">public</span> <span class="nf">InjectionToAttribute</span><span class="p">(</span><span class="n">Type</span> <span class="n">type</span><span class="p">,</span> <span class="kt">string</span> <span class="n">name</span><span class="p">){}</span>
+    <span class="p">}</span>
+
+    <span class="k">class</span> <span class="nc">InjectionMethodAttribute</span> <span class="p">:</span> <span class="n">Attribute</span>
+    <span class="p">{</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
         </section>
 
         <aside id="sidebar">
