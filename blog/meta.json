@@ -1,0 +1,16 @@
+{
+    "blog": {},
+    "posts": [
+        {
+            "file": "2019-11-25-welcome.md",
+            "created": "2019-11-25T11:00:00",
+            "author": "Erlimar Silva Campos",
+            "title": "Seja bem vindo!",
+            "abstract": [
+                "Olá, este é meu primeiro post utilizando o mecanismo GitHub Blog",
+                "(https://github.com/e5r/github-blog)."
+            ],
+            "banner": "http://broadwaysaratoga.com/wp-content/uploads/2015/04/laptop.jpg"
+        }
+    ]
+}
