@@ -25,6 +25,24 @@
             ]
         },
         {
+            "id": "2012-04-12-fundamentos-permissoes-eh-system-zero",
+            "datetime": "2012-03-21T00:00:00",
+            "author": "Erlimar Silva Campos",
+            "title": "Fundamentos de permissões - Eh System Zero",
+            "abstract": [
+                "Creio que ainda não falei, mas registrei uma empresa a",
+                "algum tempo (EH SISTEMAS DE INFORMATICA), e apesar de ainda não estar movimentando-a,",
+                "tenho muitas idéias para a mesma e estou finalizando a organização dos",
+                "materiais para então levá-la ao mercado, já com um produto no portifólio."
+            ],
+            "tags": [
+                "hello",
+                "twitter",
+                "wordpress",
+                "scharp"
+            ]
+        },
+        {
             "id": "2019-11-25-welcome",
             "showInHome": true,
             "datetime": "2019-11-25T11:00:00",
