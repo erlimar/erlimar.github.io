@@ -11,8 +11,23 @@
     },
     "posts": [
         {
-            "file": "2019-11-25-welcome.md",
-            "created": "2019-11-25T11:00:00",
+            "id": "2012-03-21-hello",
+            "showInHome": true,
+            "datetime": "2012-03-21T00:00:00",
+            "author": "Erlimar Silva Campos",
+            "title": "Alô mundo!",
+            "abstract": "Vou aproveitar a 'deixa' do WordPress que após instalá-lo (ou criar minha conta pública) já me cadastra um post \"Hello World!\", pois bem eu só renomeei o post e deletei o comentário, no mais, gostaria mesmo de dizer...",
+            "tags": [
+                "hello",
+                "twitter",
+                "wordpress",
+                "scharp"
+            ]
+        },
+        {
+            "id": "2019-11-25-welcome",
+            "showInHome": true,
+            "datetime": "2019-11-25T11:00:00",
             "author": "Erlimar Silva Campos",
             "title": "Seja bem vindo!",
             "abstract": [
