@@ -1,5 +1,14 @@
 {
-    "blog": {},
+    "blog": {
+        "title": "Blog do Erlimar",
+        "abstract": [
+            "Meu nome é Erlimar Silva Campos, sou programador de softwares especialista nas linguagens",
+            "de programação C/C++, C# .NET, Object Pascal, PHP, Python e JavaScript.",
+            "Não tenho formação acadêmica em nenhuma das áreas que acabei de citar, mas em breve serei",
+            "um ‘Engenheiro de Software’. Tudo que sei, aprendi em livros, com colegas de trabalho e na",
+            "vasta extensão da Internet."
+        ]
+    },
     "posts": [
         {
             "file": "2019-11-25-welcome.md",
