@@ -25,7 +25,8 @@
             ],
             "categories": [
                 "Vlog"
-            ]
+            ],
+            "banner": "assets://img/hello-html.jpg"
         },
         {
             "id": "2012-04-12-fundamentos-permissoes-eh-system-zero",
@@ -55,6 +56,18 @@
             "datetime": "2019-11-25T11:00:00",
             "author": "Erlimar Silva Campos",
             "title": "Seja bem vindo!",
+            "abstract": [
+                "Olá, este é meu primeiro post utilizando o mecanismo GitHub Blog",
+                "(https://github.com/e5r/github-blog)."
+            ],
+            "banner": "http://broadwaysaratoga.com/wp-content/uploads/2015/04/laptop.jpg"
+        },
+        {
+            "id": "2019-11-25-welcome2",
+            "showInHome": false,
+            "datetime": "2019-11-25T11:00:00",
+            "author": "Erlimar Silva Campos",
+            "title": "Seja bem vindo 2!",
             "abstract": [
                 "Olá, este é meu primeiro post utilizando o mecanismo GitHub Blog",
                 "(https://github.com/e5r/github-blog)."
