@@ -26,7 +26,8 @@
             "categories": [
                 "Vlog"
             ],
-            "banner": "assets://img/hello-html.jpg"
+            "banner": "assets://img/hello-html.jpg",
+            "image": "assets://img/hello-world-full.png"
         },
         {
             "id": "2012-04-12-fundamentos-permissoes-eh-system-zero",
@@ -60,7 +61,8 @@
                 "Olá, este é meu primeiro post utilizando o mecanismo GitHub Blog",
                 "(https://github.com/e5r/github-blog)."
             ],
-            "banner": "http://broadwaysaratoga.com/wp-content/uploads/2015/04/laptop.jpg"
+            "banner": "http://broadwaysaratoga.com/wp-content/uploads/2015/04/laptop.jpg",
+            "image": "assets://img/do-post-back.png"
         },
         {
             "id": "2019-11-25-welcome2",
