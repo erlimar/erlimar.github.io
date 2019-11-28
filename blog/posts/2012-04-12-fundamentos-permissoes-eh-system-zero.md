@@ -59,4 +59,4 @@ O LEITOR PODE REDISTRIBUIR O DOCUMENTO, DESDE QUE MENCIONE OS DIREITOS AUTORAIS.
 
 ## O Link
 
-[Fundamentos de permissões – Eh System Zero.pdf](https://erlimar.files.wordpress.com/2012/03/fundamentos-de-permissc3b5es-eh-system-zero.pdf)
+[Fundamentos de permissões – Eh System Zero.pdf](assets://blob/fundamentos-de-permissoes-eh-system-zero.pdf)
