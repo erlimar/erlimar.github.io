@@ -75,6 +75,18 @@
                 "(https://github.com/e5r/github-blog)."
             ],
             "banner": "http://broadwaysaratoga.com/wp-content/uploads/2015/04/laptop.jpg"
+        },
+        {
+            "id": "2020-03-02-project-directory-structure",
+            "showInHome": true,
+            "datetime": "2020-03-02T00:00:00",
+            "author": "Erlimar Silva Campos",
+            "title": "Estrutura de diretório de um projeto",
+            "abstract": [
+                "Como devemos organizar a estrutura de diretório de nossos projetos?",
+                "Dependendo da tecnologia que você usa para desenvolver software você organiza o diretório de seu projeto..."
+            ],
+            "banner": "https://wiki.cdot.senecacollege.ca/w/imgs/thumb/Directory-structure-1.png/350px-Directory-structure-1.png"
         }
     ]
 }
