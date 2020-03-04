@@ -33,7 +33,7 @@ $ tree my-project
 |-- share/          ; architecture sared fies
 |-- src/            ; source files
 |-- tmp/            ; temporary files (i.e: generated for build scripts)
-\-- var/            ; 
+`-- var/            ; 
     `-- log/        ; development log files
 ```
 
