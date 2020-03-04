@@ -22,19 +22,19 @@ UNIX. (https://homepages.uc.edu/~thomam/Intro_Unix_Text/File_System.html).
 ```
 $ tree my-project
 .
-|-- bin/			; executable source or generated binary files
-|-- boot/			; bootstrap scripts
-|-- etc/			; config files
-|-- include/		; c/c++ header files
-|-- lib/			; library source or generated library binaries
-|-- man/			; manual files ("doc/"?)
-|-- media/			; static media files
-|-- opt/			; static files
+|-- bin/            ; executable source or generated binary files
+|-- boot/           ; bootstrap scripts
+|-- etc/            ; config files
+|-- include/        ; c/c++ header files
+|-- lib/            ; library source or generated library binaries
+|-- man/            ; manual files ("doc/"?)
+|-- media/          ; static media files
+|-- opt/            ; static files
 |-- share/          ; architecture sared fies
-|-- src/			; source files
-|-- tmp/			; temporary files (i.e: generated for build scripts)
-\-- var/			; 
-    \-- log/		; development log files
+|-- src/            ; source files
+|-- tmp/            ; temporary files (i.e: generated for build scripts)
+\-- var/            ; 
+    `-- log/        ; development log files
 ```
 
 * "boot" -> renamed to "bootstrap"
@@ -45,16 +45,16 @@ $ tree my-project
 ```
 $ tree my-project
 .
-|-- bin/			; executable source or generated binary files
-|-- bootstrap/		; bootstrap scripts
-|-- etc/			; config files
-|   \-- log/		; development log files
-|-- include/		; c/c++ header files
-|-- lib/			; library source or generated library binaries
-|-- doc/			; documentation files
-|-- assets/			; static files
-|-- src/			; source files
-|-- tmp/			; temporary files (i.e: generated for build scripts)
+|-- bin/            ; executable source or generated binary files
+|-- bootstrap/      ; bootstrap scripts
+|-- etc/            ; config files
+|   `-- log/        ; development log files
+|-- include/        ; c/c++ header files
+|-- lib/            ; library source or generated library binaries
+|-- doc/            ; documentation files
+|-- assets/         ; static files
+|-- src/            ; source files
+|-- tmp/            ; temporary files (i.e: generated for build scripts)
 |-- README
 |-- LICENSE
 |-- AUTHOR
